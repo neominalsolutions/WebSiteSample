@@ -46,3 +46,15 @@
 .menu  nav > a:hover {
    background-color: #ccc;
 }
+
+
+.banner {
+    /* ortalı bir şekilde resmi div içerisine yerleştir. */
+    background-position: center;
+    /* arkaplanı kaplasın */
+    background-size: cover;
+    min-height: 500px;
+    
+    /* css ile bir dive arkaplan resmi uygula */
+    background-image: url('/assets/img/mac.jpg');
+}

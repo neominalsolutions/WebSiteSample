@@ -1,0 +1,48 @@
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    /* dikeyde bu header class içerisindeki itemları ortalı yap */
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif'
+    
+}
+
+.logo a {
+    cursor: pointer;
+    /* underline birşey varsa alt çizgisini kaldırdık */
+    text-decoration: none;
+    padding-top:20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+    /* 16 px 1 em değerine denk gelir. */
+    letter-spacing: 0.3em;
+}
+
+.logo > a:hover {
+    background-color: #ccc;
+}
+
+
+.menu  nav > a {
+    /* menu altındaki nav etiketi bir altında bulunan tüm link elementlerine iç boşluk ver */
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* parmak işareti verdik */
+    cursor: pointer;
+ 
+
+}
+
+/* .menu class sahip nav elementi içerisindeki a elementi üzerine gelindiğinde */
+.menu  nav > a:hover {
+   background-color: #ccc;
+}

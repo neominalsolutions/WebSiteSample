@@ -34,10 +34,11 @@
     /* menu altındaki nav etiketi bir altında bulunan tüm link elementlerine iç boşluk ver */
     padding-left: 10px;
     padding-right: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     /* parmak işareti verdik */
     cursor: pointer;
+
  
 
 }
@@ -48,13 +49,176 @@
 }
 
 
+
 .banner {
+    color: white;
     /* ortalı bir şekilde resmi div içerisine yerleştir. */
-    background-position: center;
+    /* background-position: center; */
     /* arkaplanı kaplasın */
-    background-size: cover;
+    background-size:cover;
     min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-around;
     
     /* css ile bir dive arkaplan resmi uygula */
     background-image: url('/assets/img/mac.jpg');
 }
+
+
+.banner-large-size-text  {
+    font-size: 64px;
+}
+
+.banner-medium-size-text {
+    font-size: 18px;
+}
+
+.banner-button {
+    background-color: #ffffff;
+    min-width: 300px;
+    padding: 1em;
+    text-decoration: none;
+    color: black;
+    opacity: 0.6;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.banner-button:hover {
+    opacity: 0.8;
+}
+
+/* bir kök root element içerisinde farklı sizelarda yazılar varsa tüm bu element altındaki html elementlerin aynı margin değerine sahip olması gereken durumlarda rem kullanmamız gerekir. böylelikle hepsi aynı margin değerine sahip olur. bunu em ile denedik ilgili html elementinin font size göre bir margin değeri uygulandığını gördük bu sebeple kullanmadık. */
+
+/* section class="banner" bu element root elementir. */
+.banner > div {
+    margin-left: 3rem;
+}
+
+.social-icons {
+    margin-top: 2rem;
+}
+
+.social-icons nav a {
+    opacity: 0.5;
+}
+
+.social-icons nav > a:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+
+.services {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 300px;
+    align-items: center;
+}
+
+.service-item-icon {
+    padding-bottom: 1em;
+
+}
+
+.service-item-header {
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+
+
+.service-item {
+    padding: 20px;
+    text-align: center;
+}
+
+.company {
+    margin: 2em;
+    text-align: center;
+}
+
+.company-header {
+    margin: 2em;
+    font-size: 20px;
+}
+
+.work {
+    background-color: #ccc;
+    display: flex;
+    flex-direction: row;
+    padding: 3rem;
+    justify-content: space-around;
+   
+}
+
+
+
+.work-image > img {
+    /* work-image div içerisinde img kenarlıklarını ovalleştir 5px */
+    border-radius:5px;
+}
+
+.work-header {
+    font-size: 20px;
+    margin-bottom: 1.2rem;
+}
+
+.work-content {
+    font-size: 12px;
+    margin-bottom: 1.2rem;
+    max-width: 400px;
+    /* sığmayan bir yazı varsa aşağı geçsin */
+    word-break: break-all;
+    
+}
+
+
+
+
+.work-button {
+    text-decoration: none;
+    cursor: pointer;
+    max-width: 200px;
+    background-color: black;
+    padding: 20px;
+   
+}
+
+.work-button a {
+    text-decoration: none;
+    color: white;
+}
+
+.work-button:hover {
+    background-color: gray;
+}
+
+
+
+
+/* 
+
+
+.work-header {
+    font-size: 18px;
+}
+
+.work-content {
+    font-size: 12px;
+}
+
+.work-image {
+    justify-content: flex-end;
+}
+
+.work-button {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+
+    min-width: 300px;
+    padding: 1em;
+}  */
